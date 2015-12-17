@@ -1,0 +1,21 @@
+(1) To install OpenCV in Debian follow instruction under following link:
+http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html
+
+(2) To install OpenCV in Ubuntu i have used following tutorial(the way for debian does not work for me):
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=$(python3 -c "import sys; print(sys.prefix)") -D PYTHON_EXECUTABLE=$(which python3) ..
+$ make -j4
+$ sudo make install
+
+
+(2) Additional LIBS
+sudo apt-get install python3-numpy
+sudo apt-get install python3-matplotlib
+
+(2) Python version used in this project is >= 3.0. To check it on Debian/Ubuntu:
+python3 -V
+
+
+apt-get install python3-pip
+sudo pip install pyttsx
+
+in /usr/local/lib/python3.4/dist-packages/pyttsx
